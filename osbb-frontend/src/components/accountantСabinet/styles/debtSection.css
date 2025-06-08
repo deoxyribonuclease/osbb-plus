@@ -1,0 +1,108 @@
+
+.debt-container {
+
+
+    .left-table {
+        flex: 1;
+    }
+
+    .left-table .table-container {
+        width: 100%;
+        height: calc(100vh - 201px);
+    }
+
+    .chart-border {
+        border: 1px solid #324f61;
+    }
+
+    .payment-page {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+
+
+    .right-table {
+        flex: 2;
+
+        .statistics {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .stat-panel {
+            font-size: 20px;
+            flex: 1;
+            margin: 0 20px 59px 20px;
+
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f7f7f7;
+            p {
+                margin: 0;
+            }
+            strong {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+
+    .form-bottom{
+        padding: 26px;
+    }
+}
+
+.debt-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    td {
+        font-size: 16px;
+    }
+
+    .debt-amount {
+        text-align: center;
+        font-weight: bold;
+    }
+    .icon {
+        margin-right: 5px;
+    }
+
+}
+
+.debt-button-section {
+    display: flex;
+    justify-content: center;
+}
+
+
+.delete-debt-button {
+    background: #730101;
+    color: white;
+    border: none;
+    padding: 2px 5px;
+    margin-right: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.delete-debt-button:hover {
+    background: #310707;
+}
+

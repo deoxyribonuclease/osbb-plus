@@ -1,0 +1,49 @@
+
+.notifications-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .table-title {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #254623;
+    }
+    .notification-table-wrapper {
+        padding: 10px;
+        min-height: calc(100vh - 100px);
+    }
+
+    .table-container {
+        height: calc(100vh - 117px);
+        th {
+            background-color: #20521b;
+        }
+
+        tr:not(.empty-row) {
+            border-bottom: 1px solid #20521b;
+        }
+        table {
+            border: 1px solid #20521b;
+        }
+        .pagination {
+            background-color: #20521b;
+            button {
+                background-color: #254623;
+                color: white;
+                border: 1px solid #8a929f;
+            }
+            button:hover {
+                background: #555;
+            }
+            button.active {
+                background: #cbc6bd;
+                color: black;
+
+            }
+        }
+
+    }
+
+}
+
+

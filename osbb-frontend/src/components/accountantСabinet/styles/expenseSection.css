@@ -1,0 +1,183 @@
+.expense-container {
+    display: flex;
+    overflow: auto;
+    max-height: 100vh;
+
+    .expense-page {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        flex-grow: 1;
+        max-height: 1000px;
+        overflow: auto;
+    }
+
+    .left-table {
+        flex: 3;
+    }
+
+    .right-table {
+        flex: 2;
+    }
+
+    .charts-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 70px;
+        border: 1px solid #324f61;
+    }
+
+    .form-bottom {
+        padding: 26px;
+    }
+
+    .chart-item {
+        width: 100%;
+        min-width: 300px;
+        height: 250px;
+        padding-bottom: 64px;
+    }
+
+    .chart-item-wide {
+        width: 100%;
+        min-width: 500px;
+        height: 300px;
+    }
+
+    .table-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .button-section {
+        display: flex;
+    }
+
+
+    .dropdown-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .tip-build-section {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    select {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+}
+.add-expense-modal {
+    background: white;
+    width: 500px;
+    margin: auto;
+    position: relative;
+
+    .modal-wrapper {
+        border: 1px solid #324f61;
+        padding: 20px 20px 0;
+        height: calc(100vh - 110px);
+        overflow: auto;
+    }
+
+    .expense-modal-title {
+        background-color: #233846;
+        margin: 0;
+        padding: 9px 20px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    label {
+        font-size: 1.1em;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 97%;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s;
+    }
+
+    textarea {
+        min-height: 480px;
+        resize: none;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    .modal-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+
+        button {
+            width: 100%;
+            padding: 10px 15px;
+            font-size: 1em;
+            background-color: #5486a9;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #2a465b;
+        }
+
+        .cancel-button {
+            background-color: #dc3545;
+            white-space: nowrap;
+        }
+
+        .cancel-button:hover {
+            background-color: #330808;
+        }
+    }
+
+    .error {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+

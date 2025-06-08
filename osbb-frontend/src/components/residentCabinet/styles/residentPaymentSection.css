@@ -1,0 +1,100 @@
+.resident-payment-container {
+    display: flex;
+    overflow: auto;
+    max-height: 100vh;
+
+    .payment-page {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        flex-grow: 1;
+        max-height: 1000px;
+        overflow: auto;
+    }
+
+    .left-table {
+        flex: 1.2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-table {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-title {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #254623;
+    }
+
+    .charts-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 70px;
+        min-height: 677px;
+        border: 1px solid #20521b;
+        border-bottom: 0;
+        flex-grow: 1;
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .chart-item {
+        flex: 1;
+        min-width: 650px;
+        height: 250px;
+        padding-bottom: 108px;
+
+    }
+
+    .table-container {
+        height: calc(100vh - 117px);
+        th {
+            background-color: #20521b;
+        }
+
+        tr:not(.empty-row) {
+            border-bottom: 1px solid #20521b;
+        }
+        table {
+            border: 1px solid #20521b;
+        }
+        .pagination {
+            background-color: #20521b;
+            button {
+                background-color: #254623;
+                color: white;
+                border: 1px solid #8a929f;
+            }
+            button:hover {
+                background: #555;
+            }
+            button.active {
+                background: #cbc6bd;
+                color: black;
+
+            }
+        }
+    }
+
+    .chart-item-wide {
+        flex: 2;
+        min-width: 450px;
+        height: 300px;
+    }
+
+    .form-bottom {
+        padding: 27px;
+            background-color: #20521b;
+            color: white;
+
+    }
+
+}
+
+

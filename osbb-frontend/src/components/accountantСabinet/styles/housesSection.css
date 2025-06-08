@@ -1,0 +1,217 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+
+    .main-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-title{
+        background-color: #233846;
+        margin: 0;
+        padding: 5px 20px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+    }
+
+    .button-section{
+        border: 1px solid #324f61;
+        text-align: left;
+        display: flex;
+
+        .delete-button{
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            color: #000000;
+            border: 2px solid red;
+            padding: 5px 15px;
+            margin: 2px 10px;
+            cursor: pointer;
+            border-radius: 1px;
+            transition: background 0.3s;
+        }
+
+        .icon{
+            margin-right: 5px;
+        }
+
+        .delete-button:hover {
+            color: #ffffff;
+            background-color: #5b0202;
+        }
+
+        .delete-button:focus {
+           outline: none;
+        }
+
+
+    }
+
+}
+
+.add-house-modal {
+    background: white;
+    width: 500px;
+    margin: auto;
+    position: relative;
+
+    .modal-wrapper{
+        border: 1px solid #324f61;
+        padding: 20px 20px 0;
+        height: calc(100vh - 110px);
+        overflow: auto;
+    }
+
+    .add-build-title {
+        background-color: #233846;
+        margin: 0;
+        padding: 9px 20px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .error {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form-layout {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        min-height: 240px;
+    }
+
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .preview-image {
+        max-width: 100%;
+        object-fit: cover;
+        max-height: 150px;
+        margin-top: 10px;
+    }
+
+
+
+    .map-container {
+        width: 100%;
+        height: 340px;
+        margin-top: 10px;
+    }
+
+    .textarea-input{
+        width: 97%;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s;
+        min-height: 80px;
+        resize: none;
+    }
+
+    .modal-title {
+        background-color: #233846;
+        margin: 0;
+        padding: 9px 20px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    label {
+        font-size: 1.1em;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    input {
+        width: 97%;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s;
+    }
+
+    input:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    .modal-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+
+        button {
+            width: 100%;
+            padding: 10px 15px;
+            font-size: 1em;
+            background-color: #5486a9;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #2a465b;
+        }
+
+        .cancel-button {
+            background-color: #dc3545;
+            white-space: nowrap;
+        }
+
+        .cancel-button:hover {
+            background-color: #330808;
+        }
+    }
+}
+
+
+

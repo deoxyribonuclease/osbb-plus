@@ -1,0 +1,419 @@
+.osbbsection-mod-container {
+    padding: 10px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    background-color: #f9f9f9;
+}
+
+.osbbsection-mod-container .osbb-title {
+    background-color: #254623;
+    margin: 0;
+    padding: 5px 20px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+.osbbsection-mod-container .osbb-bottom {
+    background-color: #20521b;
+    margin: 0;
+    padding: 20px 20px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+.osbbsection-mod-container .icon-inline {
+    color: #254623;
+    margin-top: 3px;
+    padding-top: 3px;
+    margin-right: 3px;
+    font-size: 1.2em;
+    transform: translateY(3px);
+}
+
+.osbbsection-mod-container .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.osbbsection-mod-container .content.full-width {
+    max-height: calc(100vh - 160px);
+    border: 1px solid #254623;
+    border-bottom: 0;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+
+
+.osbbsection-mod-container .filters-container {
+    display: flex;
+    border: 1px solid #254623;
+    padding: 3px 15px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+}
+
+.osbbsection-mod-container .search-box,
+.osbbsection-mod-container .filter-box {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.osbbsection-mod-container .search-box input {
+    padding: 5px 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 250px;
+}
+
+.osbbsection-mod-container .filter-box select {
+    padding: 5px 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.osbbsection-mod-container .osbb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    width: 100%;
+}
+
+.osbbsection-mod-container .osbb-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid #999;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.osbbsection-mod-container .osbb-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.osbbsection-mod-container .osbb-card.verified {
+    border-top-color: #3c8c3c;
+}
+
+.osbbsection-mod-container .osbb-card.unverified {
+    border-top-color: #c14b4b;
+}
+
+.osbbsection-mod-container .osbb-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #254623;
+    font-size: 1.2em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.osbbsection-mod-container .field {
+    margin-bottom: 15px;
+}
+
+.osbbsection-mod-container .field strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #254623;
+}
+
+.osbbsection-mod-container .field span {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.osbbsection-mod-container .field p {
+    word-break: break-word;
+    max-width: 100px;
+}
+
+
+.osbbsection-mod-container .field-description {
+    text-align: left;
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+    word-break: break-word;
+    max-width: 100px;
+    line-height: 1.1;
+}
+
+.osbbsection-mod-container .status-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+.osbbsection-mod-container .verified-icon {
+    color: #3c8c3c !important;
+    margin-bottom: 10px;
+}
+
+.osbbsection-mod-container .unverified-icon {
+    color: #c14b4b !important;
+    margin-bottom: 10px;
+}
+
+.osbbsection-mod-container .card-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.osbbsection-mod-container .card-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.osbbsection-mod-container .details-btn {
+    background-color: #254623;
+    color: white;
+}
+
+.osbbsection-mod-container .details-btn:hover {
+    background-color: #1c3a1c;
+}
+
+.osbbsection-mod-container .status-btn {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.osbbsection-mod-container .status-btn.verified {
+    background-color: #ffe6e6;
+    color: #c14b4b;
+}
+
+.osbbsection-mod-container .status-btn.verified:hover {
+    background-color: #ffd2d2;
+}
+
+.osbbsection-mod-container .status-btn.unverified {
+    background-color: #e6ffe6;
+    color: #3c8c3c;
+}
+
+.osbbsection-mod-container .status-btn.unverified:hover {
+    background-color: #d2ffd2;
+}
+
+.osbbsection-mod-container .delete-btn {
+    background-color: #732d2d;
+    color: white;
+}
+
+.osbbsection-mod-container .delete-btn:hover {
+    background-color: #a73f3f;
+}
+
+.osbbsection-mod-container .no-results {
+    grid-column: 1 / -1;
+    padding: 30px;
+    text-align: center;
+    color: #666;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+/* Modal Styles */
+.modal-mod-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-mod-content {
+    background-color: white;
+    max-width: 800px;
+    width: 90%;
+    max-height: 95vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+
+    .compact-fields {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 15px;
+    }
+
+    .compact-fields .field {
+        margin-bottom: 10px;
+        word-break: break-word;
+        .icon-inline{
+            margin-right: 5px;
+        }
+    }
+
+    .compact-fields .field.full-width {
+        grid-column: 1 / -1;
+    }
+
+    .compact-fields .field strong {
+        margin-bottom: 2px;
+        font-size: 0.9em;
+    }
+
+    .status {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 4px;
+        width: fit-content;
+    }
+
+    .status.verified {
+        background-color: #e6ffe6;
+        color: #3c8c3c;
+    }
+
+    .status.unverified {
+        background-color: #ffe6e6;
+        color: #c14b4b;
+    }
+
+    .modal-actions {
+        padding: 12px 15px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        background-color: #f0f0f0;
+        border-top: 1px solid #ddd;
+    }
+
+    .modal-actions button {
+        padding: 8px 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.2s;
+
+    }
+
+    .close-btn {
+        background-color: #606060;
+        color: #ffffff;
+    }
+
+    .close-btn:hover {
+        background-color: #939393;
+    }
+
+    .status-btn.unverified {
+        background-color: #e6ffe6;
+        color: #3c8c3c;
+    }
+
+    .status-btn.unverified:hover {
+        background-color: #d2ffd2;
+    }
+
+    .status-btn.verified {
+        background-color: #ffe6e6;
+        color: #c14b4b;
+    }
+
+    .status-btn.verified:hover {
+        background-color: #ffd2d2;
+    }
+
+    .delete-btn {
+        background-color: #732d2d;
+        color: white;
+    }
+
+    .delete-btn:hover {
+        background-color: #a73f3f;
+    }
+
+}
+
+.modal-mod-content.compact {
+    max-width: 650px;
+}
+
+.modal-title {
+    background-color: #254623;
+    color: white;
+    margin: 0;
+    padding: 12px 20px;
+    font-size: 1.4em;
+}
+
+.modal-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.modal-body {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-body.compact {
+    padding: 15px;
+    gap: 15px;
+}
+
+.modal-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #20521b;
+
+
+}
+
+.modal-section h3 {
+    color: #254623;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+

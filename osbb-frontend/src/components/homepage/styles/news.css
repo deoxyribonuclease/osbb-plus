@@ -1,0 +1,411 @@
+.news {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 1.8px;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    h2 {
+        margin-top: 0;
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        margin-right: 20px;
+    }
+
+    .news-gallery {
+        max-width: 1440px;
+        display: flex;
+        gap: 43px;
+        justify-content: center;
+    }
+
+    .news-item {
+        background:white;
+        border-radius: 30px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        text-align: left;
+        width: 30%;
+        padding-bottom: 20px;
+        max-width: 300px;
+
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+    }
+
+    .news-item:hover {
+        transform: scale(1.02);
+    }
+
+    .news-description {
+        padding: 15px;
+
+        span {
+            font-size: 12px;
+            color: #7A7A7A;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: black;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn {
+        font-size: 14px;
+        color: #183ebd;
+        font-weight: normal;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        color: blue;
+    }
+}
+
+
+.single-news{
+    .news-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    /* Keep all existing CSS */
+    .return-button {
+        background: none;
+        border: none;
+        font-size: 16px;
+        color: #254623;
+        cursor: pointer;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        transition: color 0.3s ease;
+    }
+
+    .return-button:hover {
+        color: #1a331a;
+    }
+
+    .article-preview {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .article-image-wrapper {
+        position: relative;
+        width: 100%;
+        background: #000000;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .article-image {
+        width: 100%;
+        max-width: 1200px;
+        min-height: 300px;
+        max-height: 400px;
+        display: block;
+        object-fit: cover;
+    }
+
+    .article-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+        padding: 20px;
+        padding-top: 50px;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    .article-image-number-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article-image-number {
+        width: 100%;
+        max-width: 1200px;
+        color: white;
+        font-size: 40px;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+        font-weight: bold;
+        padding: 20px;
+        padding-top: 50px;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    .article-date {
+        padding: 10px 20px;
+        color: #666;
+        font-size: 14px;
+        border-top: 1px solid #cbcaca;
+    }
+
+    .article-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 15px 0;
+        padding: 0 20px;
+        color: #254623;
+    }
+
+    .article-image-overlay .article-title {
+        color: white;
+        margin: 0 auto;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .article-content {
+        padding: 20px;
+        line-height: 1.6;
+        color: #444;
+        font-size: 16px;
+    }
+
+    .article-content p {
+        font-size: 20px;
+        margin-bottom: 16px;
+        text-align: left;
+        word-break: break-word;
+    }
+
+    .article-quote {
+        background-color: #f5f5f5;
+        border-left: 4px solid #254623;
+        padding: 15px;
+        margin: 20px 0;
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+        color: #444;
+    }
+
+    .error-message {
+        color: #e74c3c;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .not-found {
+        color: #7f8c8d;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* Updated navigation styles with background images */
+    .news-navigation {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+    }
+
+    .nav-button {
+        flex: 1;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+
+    .nav-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .nav-button:hover::before {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-button-content {
+        width: 100%;
+        padding: 15px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .nav-direction {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .nav-title {
+        text-align: center;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .prev-button {
+        margin-right: 1px;
+    }
+
+    .next-button {
+        text-align: right;
+    }
+
+    .disabled {
+        background-color: #444;
+        background-image: none !important;
+        cursor: default;
+        opacity: 0.7;
+    }
+
+    .disabled::before {
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 18px;
+    }
+
+    .article-image {
+        max-width: 80%;
+    }
+}
+
+.news-list-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .news-grid-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .news-card {
+        width: 100%;
+        max-width: 350px;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .news-card:hover {
+        transform: translateY(-1px);
+    }
+
+    .news-card-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .news-card-content {
+        padding: 15px;
+    }
+
+    .news-card-content h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .news-date {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 10px;
+    }
+
+    .news-excerpt {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #809f20;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #3d490e;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

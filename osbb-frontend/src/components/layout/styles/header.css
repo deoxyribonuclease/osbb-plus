@@ -1,0 +1,138 @@
+header {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: black;
+    gap: 150px;
+    border-bottom: 1px solid #b6b5b5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+
+    .header-link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .separate {
+        border-left: 1px solid #b6b5b5;
+        margin-left: 15px;
+        padding: 4px 0 4px 15px;
+        color: #818181;
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        height: 1.6em;
+        text-align: center;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-size: 30px;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 45px;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+        transition: color 0.5s;
+    }
+
+    nav ul li a:hover {
+        color: #004bec;
+    }
+
+    .login-button {
+        background-color: #809f20;
+        color: white;
+        border: none;
+        padding: 8px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+    }
+
+    .login-button:hover {
+        background-color: #143308;
+    }
+
+
+    @media (max-width: 992px) {
+        gap: 20px;
+
+        nav ul {
+            gap: 25px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        justify-content: space-between;
+        padding: 10px 15px;
+
+        nav {
+            order: 3;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .separate {
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        gap: 15px;
+
+        .header-link {
+            justify-content: center;
+            width: 100%;
+        }
+
+        .separate {
+            border-left: none;
+            margin-left: 0;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .login-button {
+            margin-top: 10px;
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+}

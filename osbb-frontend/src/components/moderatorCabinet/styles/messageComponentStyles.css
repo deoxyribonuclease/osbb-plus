@@ -1,0 +1,237 @@
+.message-component {
+    padding: 10px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    background-color: #f9f9f9;
+}
+
+.message-component .message-container {
+    display: flex;
+    height: 100%;
+    gap: 20px;
+}
+
+.message-component .panel-title {
+    background-color: #254623;
+    margin: 0;
+    padding: 5px 20px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+.message-component .osbb-bottom {
+    background-color: #20521b;
+    margin: 0;
+    padding: 20px 20px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+/* Стилі для панелі користувачів */
+.message-component .users-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #254623;
+    background-color: #fff;
+}
+
+.message-component .selection-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+}
+
+.message-component .selection-count-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.message-component .select-all-button {
+    background-color: #254623;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.message-component .select-all-button:hover {
+    background-color: #1c3a1c;
+}
+
+.message-component .hierarchy-container {
+    font-size: 30px;
+    padding: 10px;
+    overflow-y: auto;
+    height: 100%;
+    border-radius: 0;
+}
+
+/* Стилі для компонента Collapse (ієрархія) */
+.message-component .hierarchy-collapse {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.message-component .hierarchy-panel {
+    border-bottom: 1px solid #eee;
+    border-radius: 0;
+
+}
+
+.message-component .hierarchy-item {
+    border-radius: 0;
+    padding: 5px;
+    text-align: left;
+}
+
+.message-component .hierarchy-item:hover {
+    background-color: #f5f5f5;
+}
+
+.message-component .hierarchy-checkbox {
+    font-size: 16px;
+    color: #333;
+}
+
+.message-component .hierarchy-nested-collapse {
+
+    border-radius: 0;
+    .ant-collapse-header{
+        padding: 10px;
+        background-color: #eeeeee;
+        font-size: 16px;
+    }
+
+    .ant-collapse-content-box{
+        margin: 0;
+        padding: 10px;
+        border: 0;
+    }
+}
+
+.message-component .hierarchy-nested-panel {
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.message-component .loading-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #254623;
+    font-size: 18px;
+}
+
+/* Стилі для форми повідомлення */
+.message-component .form-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #254623;
+    background-color: #fff;
+}
+
+.message-component form {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+
+.message-component .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.message-component .form-label {
+    font-weight: bold;
+    color: #254623;
+    font-size: 16px;
+}
+
+.message-component .form-input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 96%;
+}
+
+.message-component .form-textarea {
+    min-height: 350px;
+    resize: none;
+}
+
+.message-component .selection-count {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.message-component .selection-text {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.message-component .form-actions {
+    margin-top: auto;
+}
+
+.message-component .submit-button {
+    background-color: #254623;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.message-component .submit-button:hover {
+    background-color: #1c3a1c;
+}
+
+.message-component .submit-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Стилі для сповіщень */
+.message-component .notification {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.message-component .notification-success {
+    background-color: #e6ffe6;
+    color: #3c8c3c;
+    border: 1px solid #3c8c3c;
+}
+
+.message-component .notification-error {
+    background-color: #ffe6e6;
+    color: #c14b4b;
+    border: 1px solid #c14b4b;
+}

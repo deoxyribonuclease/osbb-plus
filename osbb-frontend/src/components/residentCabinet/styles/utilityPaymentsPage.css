@@ -1,0 +1,197 @@
+.utility-payments {
+    max-height: 1200px;
+    padding: 10px;
+    overflow: auto;
+    flex-grow: 1;
+    width: 100%;
+    max-width: calc(100% - 20px);
+
+    .utility-title {
+        background-color: #254623;
+        margin: 0;
+        padding: 9px 20px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+    }
+
+    .utility-wrapper {
+        min-height: 740px;
+        border: 1px solid #20521b;
+    }
+
+    p{
+        margin: 2px;
+    }
+
+    h2, h3, h4 {
+        text-align: center;
+        margin-top: 0;
+        color: #333;
+    }
+
+    .balance-section {
+        padding: 15px;
+        background: rgba(66, 77, 67, 0.1);
+        border-radius: 8px;
+        margin: 20px 30px 5px;
+        max-width: 600px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-height: 270px;
+        min-width: 300px;
+    }
+
+    .balance-grid {
+        flex-wrap: wrap;
+        gap: 5px;
+        max-height: 240px;
+        overflow-y: auto;
+    }
+
+    .balance-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+        background: #eee;
+        border-radius: 5px;
+        min-width: 160px;
+        text-align: center;
+    }
+
+    .meters-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        margin: 20px 30px 20px;
+    }
+
+    .meter-block {
+        padding: 15px;
+        background: rgba(66, 77, 67, 0.1);
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .meter-block h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .meter-block input {
+        width: 80%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+
+    .meter-block button {
+        padding: 8px 12px;
+        background: #116525;
+        width: 87%;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .meter-block button:hover {
+        background: #218838;
+    }
+
+    .form-bottom {
+        padding: 27px;
+        background-color: #20521b;
+        color: white;
+    }
+
+    .payment-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        max-height: 350px;
+        margin-bottom: 34px;
+        overflow: hidden;
+    }
+
+    .payment-sector {
+        padding: 15px;
+        background: rgba(66, 77, 67, 0.1);
+        border-radius: 8px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .payment-container, .payment-sector {
+        align-items: flex-start;
+    }
+
+
+    .card-preview {
+        flex: 1;
+        max-width: 390px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+
+    .payment-form {
+        flex: 2;
+        max-width: 500px;
+        border-radius: 8px;
+    }
+
+
+    .payment-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .payment-row {
+        display: flex;
+        gap: 10px;
+    }
+
+    .payment-row input {
+        flex: 1;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    input{
+        width: 96%;
+    }
+
+    button {
+        padding: 10px;
+        background: #116525;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #218838;
+    }
+
+
+}
+

@@ -1,0 +1,148 @@
+.profile-settings {
+    padding: 1rem;
+
+}
+
+.profile-settings__title {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    text-align: left;
+    background-color: #233846;
+    padding: 9px 20px;
+}
+
+.profile-settings__content {
+    display: flex;
+    gap: 2rem;
+    background-color: white;
+    border: 1px solid #324f61;
+    padding: 2rem;
+    min-height: calc(100vh - 253px);
+}
+
+.profile-settings__left-column {
+    flex: 1;
+
+    max-height: calc(100vh - 160px);
+    overflow: auto;
+}
+
+.profile-settings__card {
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.profile-settings__message {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.profile-settings__message--error {
+    background-color: #fff5f5;
+    color: #d9534f;
+    border: 1px solid #d9534f;
+}
+
+.profile-settings__message--success {
+    background-color: #f0fff4;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+.profile-settings__field {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-settings__field strong {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.profile-settings__input {
+    width: 97%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    transition: border-color 0.3s ease;
+}
+
+.profile-settings__input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.profile-settings__input-hint {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 0.25rem;
+}
+
+.profile-settings__button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-settings__button {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-settings__button--primary {
+    background-color: #1c4c80;
+    color: white;
+}
+
+.profile-settings__button--primary:hover {
+    background-color: #0056b3;
+}
+
+.profile-settings__button--danger {
+    background-color: #731e24;
+    color: white;
+}
+
+.profile-settings__button--danger:hover {
+    background-color: #a71d2a;
+}
+
+.profile-settings__right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #324f61;
+    background-image: url('../../../assets/homeimage.jpg');;
+    background-size: contain;
+}
+
+.profile-settings__bottom {
+    background-color: #324f61;
+    margin: 0;
+    padding: 20px 20px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .profile-settings__content {
+        flex-direction: column;
+    }
+
+    .profile-settings__right-column {
+        display: none;
+    }
+}

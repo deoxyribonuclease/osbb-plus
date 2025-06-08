@@ -1,0 +1,110 @@
+.osbbsection-info-container {
+    padding: 10px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    background-color: #f9f9f9;
+
+    .osbb-title {
+        background-color: #254623;
+        margin: 0;
+        padding: 9px 20px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+    }
+
+    .osbb-bottom {
+        background-color: #20521b;
+        margin: 0;
+        padding: 20px 20px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+    }
+    .icon-inline {
+        color: #254623;
+        margin-top: 3px;
+        padding-top: 3px;
+        margin-right: 3px;
+        font-size: 1.2em;
+        transform: translateY(3px);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .left-column {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100vh - 160px);
+        border: 1px solid #254623;
+        padding: 15px;
+        overflow-y: auto;
+    }
+
+    .right-column {
+        width: 55%;
+        height: 100%;
+        border: 1px solid #254623;
+        border-left: 0;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+
+    .field {
+        margin-bottom: 15px;
+    }
+
+    .field strong {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #254623;
+    }
+
+    .field span {
+        font-size: 1em;
+        color: #555;
+        word-break: break-word;
+    }
+
+    .field-description {
+        text-align: left;
+        font-size: 0.9em;
+        color: #888;
+    }
+
+    .icon {
+        margin-top: 20px;
+        height: 25px;
+        width: 100%;
+    }
+
+
+    .field-description{
+        text-align: left;
+        margin: 0;
+    }
+
+
+}
+
+

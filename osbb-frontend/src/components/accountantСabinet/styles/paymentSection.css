@@ -1,0 +1,48 @@
+.payment-container {
+    display: flex;
+    overflow: auto;
+    max-height: 100vh;
+
+
+    .payment-page {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        flex-grow: 1;
+        max-height: 1000px;
+        overflow: auto;
+    }
+
+    .left-table {
+        flex: 1;
+    }
+
+    .right-table {
+        flex: 2;
+    }
+
+    .charts-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 70px;
+        border: 1px solid #324f61;
+    }
+
+    .form-bottom {
+        padding: 26px;
+    }
+
+    .chart-item {
+        width: 100%;
+        min-width: 300px;
+        height: 250px;
+        padding-bottom: 64px;
+    }
+
+    .chart-item-wide {
+        width: 100%;
+        min-width: 500px;
+        height: 300px;
+    }
+}

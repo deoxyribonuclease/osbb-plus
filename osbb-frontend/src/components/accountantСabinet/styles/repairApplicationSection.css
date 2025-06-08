@@ -1,0 +1,232 @@
+
+.repair-dashboard-content-section{
+    .status-badge {
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+    }
+
+
+    .status-filter-buttons {
+        margin-left: auto;
+        margin-right: 20px;
+        display: flex;
+        gap: 8px;
+    }
+
+
+
+    .filter-button {
+        padding: 3px 12px;
+        border: 2px solid #1c1c1c;
+        margin: 2px;
+        background: #8c8c8c;
+        cursor: pointer;
+        border-radius: 0;
+        opacity: 0.3;
+        transition: 0.3s;
+    }
+
+
+    .filter-button.active {
+        color: #fff;
+        opacity:1;
+    }
+
+    .filter-button:hover {
+        background: #3b3a3a;
+    }
+
+
+    .filter-button.status-pending {
+        background-color: #ffc107;
+        color: #212529;
+    }
+
+    .filter-button.status-in_progress {
+        background-color: #17a2b8;
+        color: white;
+    }
+
+    .filter-button.status-completed {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .filter-button.status-rejected {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .filter-button.active.status-pending {
+        background-color: #e0a800;
+    }
+
+    .filter-button.active.status-in_progress {
+        background-color: #138496;
+    }
+
+    .filter-button.active.status-completed {
+        background-color: #218838;
+    }
+
+    .filter-button.active.status-rejected {
+        background-color: #c82333;
+    }
+
+
+}
+
+.repair-app-title {
+    background-color: #233846;
+    margin: 0;
+    padding: 9px 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+.status-badge.status-pending {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.status-badge.status-in_progress {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.status-badge.status-completed {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-badge.status-rejected {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+.modal-button {
+    flex:1;
+    padding: 10px 20px;
+    min-width: 160px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.modal-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.modal-accept {
+    background-color: #175e27;
+    color: white;
+}
+
+.modal-accept:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.modal-delete {
+    background-color: #6b1a21;
+    color: white;
+}
+
+.modal-delete:hover:not(:disabled) {
+    background-color: #c82333;
+}
+
+.modal-close {
+    background-color: #6c757d;
+    color: white;
+}
+
+.modal-close:hover:not(:disabled) {
+    background-color: #5a6268;
+}
+
+
+.notification-message {
+    width: 97%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notification-message:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 4px rgba(23, 162, 184, 0.5);
+    outline: none;
+}
+
+.status-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.status-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.3;
+}
+
+.status-button:focus{
+    outline: none;
+}
+
+.status-button:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.status-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.status-button.active {
+    opacity: 1;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.status-button.status-pending {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.status-button.status-in_progress {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.status-button.status-completed {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-button.status-rejected {
+    background-color: #dc3545;
+    color: white;
+}
+

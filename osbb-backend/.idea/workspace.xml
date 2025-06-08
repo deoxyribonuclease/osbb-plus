@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2o9mQYtgaNAFaq6tXWmpp9dIvZ3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.Apartment.js.executor": "Run",
+    "Node.js.House.js.executor": "Run",
+    "Node.js.OSBB.js.executor": "Run",
+    "Node.js.User.js.executor": "Run",
+    "Node.js.UserNotification.js.executor": "Run",
+    "Node.js.db.js.executor": "Run",
+    "Node.js.server.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "20.12.2",
+    "javascript.nodejs.core.library.typings.version": "20.12.14",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Vlad/Desktop/osbb/osbb-frontend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vlad\Desktop\osbb\osbb-backend\data" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="" />
+      <created>1730290149699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730290149699</updated>
+      <workItem from="1730290150935" duration="1523000" />
+      <workItem from="1731576254241" duration="7588000" />
+      <workItem from="1741026804962" duration="5672000" />
+      <workItem from="1741044559952" duration="315000" />
+      <workItem from="1741116332730" duration="1897000" />
+      <workItem from="1741182787294" duration="17501000" />
+      <workItem from="1741285434890" duration="5325000" />
+      <workItem from="1741365812862" duration="2626000" />
+      <workItem from="1741443462417" duration="2644000" />
+      <workItem from="1741535299707" duration="7361000" />
+      <workItem from="1741561347858" duration="335000" />
+      <workItem from="1741615725548" duration="8436000" />
+      <workItem from="1741700523534" duration="1132000" />
+      <workItem from="1741791770867" duration="14879000" />
+      <workItem from="1741826748265" duration="453000" />
+      <workItem from="1741874380430" duration="16646000" />
+      <workItem from="1741966476466" duration="14798000" />
+      <workItem from="1742073569840" duration="37957000" />
+      <workItem from="1742316213636" duration="815000" />
+      <workItem from="1742483163056" duration="14200000" />
+      <workItem from="1742568874378" duration="4300000" />
+      <workItem from="1742662739756" duration="609000" />
+      <workItem from="1742909355479" duration="684000" />
+      <workItem from="1743030091891" duration="640000" />
+      <workItem from="1743079360222" duration="5211000" />
+      <workItem from="1743254269964" duration="6552000" />
+      <workItem from="1743361653671" duration="1200000" />
+      <workItem from="1743418322210" duration="4820000" />
+      <workItem from="1743444151922" duration="9725000" />
+      <workItem from="1743509711612" duration="971000" />
+      <workItem from="1743692441744" duration="6470000" />
+      <workItem from="1743862850139" duration="383000" />
+      <workItem from="1743863315439" duration="9590000" />
+      <workItem from="1743967917981" duration="4976000" />
+      <workItem from="1744994989995" duration="1012000" />
+      <workItem from="1744996700833" duration="980000" />
+      <workItem from="1745079318502" duration="8664000" />
+      <workItem from="1745141304001" duration="2660000" />
+      <workItem from="1745422898970" duration="2485000" />
+      <workItem from="1745476061696" duration="1799000" />
+      <workItem from="1745682578346" duration="12000" />
+      <workItem from="1745751061029" duration="6793000" />
+      <workItem from="1745848936824" duration="3661000" />
+      <workItem from="1745992240184" duration="20000" />
+      <workItem from="1747129782221" duration="6726000" />
+      <workItem from="1747200988997" duration="3321000" />
+      <workItem from="1749422650748" duration="549000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
