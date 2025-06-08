@@ -1,4 +1,4 @@
-const PaymentHistory = require("../models/paymentHistory");
+const PaymentHistory = require("../models/PaymentHistory");
 const Balance = require('../models/Balance');
 
 

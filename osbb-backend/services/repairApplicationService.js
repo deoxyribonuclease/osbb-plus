@@ -1,5 +1,5 @@
-const RepairApplication = require("../models/repairApplication");
-const {User, Apartment, House} = require("../models/associations");
+const RepairApplication = require("../models/RepairApplication");
+const { Apartment, House} = require("../models/associations");
 
 const getAll = async () => {
     return await RepairApplication.findAll();

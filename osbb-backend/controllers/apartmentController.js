@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 const apartmentService = require('../services/apartmentService');
 const userService = require('../services/userService');
-const House = require('../models/house');
+const House = require('../models/House');
 
 const getAllApartments = async (req, res) => {
     try {

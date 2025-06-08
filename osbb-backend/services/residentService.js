@@ -1,4 +1,4 @@
-const Resident = require("../models/resident");
+const Resident = require("../models/Resident");
 const { Sequelize } = require('sequelize');
 const crypto = require('crypto');
 

@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="Exception remove">
+    <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="Names fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/apartmentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/apartmentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/meterController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/meterController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/paymentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/paymentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/residentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/residentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/apartmentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/apartmentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/authService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/meterService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/meterService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/newsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/newsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/paymentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/paymentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/repairApplicationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/repairApplicationService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/residentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/residentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +141,7 @@
       <workItem from="1745992240184" duration="20000" />
       <workItem from="1747129782221" duration="6726000" />
       <workItem from="1747200988997" duration="3321000" />
-      <workItem from="1749422650748" duration="1834000" />
+      <workItem from="1749422650748" duration="2322000" />
     </task>
     <task id="LOCAL-00001" summary="Exception remove">
       <option name="closed" value="true" />
@@ -140,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749424169379</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Name fix">
+      <option name="closed" value="true" />
+      <created>1749424550445</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749424550445</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +178,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exception remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exception remove" />
+    <MESSAGE value="Name fix" />
+    <MESSAGE value="Names fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Names fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

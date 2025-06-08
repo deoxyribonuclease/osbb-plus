@@ -1,5 +1,5 @@
 const paymentService = require('../services/paymentService');
-const Apartment = require('../models/apartment');
+const Apartment = require('../models/Apartment');
 
 
 

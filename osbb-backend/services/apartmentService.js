@@ -1,4 +1,4 @@
-const Apartment = require("../models/apartment");
+const Apartment = require("../models/Apartment");
 
 const getAll = async () => {
     return await Apartment.findAll();

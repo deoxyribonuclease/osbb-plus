@@ -1,5 +1,5 @@
 const meterService = require('../services/meterService');
-const Apartment = require('../models/apartment');
+const Apartment = require('../models/Apartment');
 const { BalanceAdd} = require('../services/paymentService');
 
 const getAllMeters = async (req, res) => {

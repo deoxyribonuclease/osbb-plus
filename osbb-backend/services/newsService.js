@@ -1,4 +1,4 @@
-const News = require("../models/news");
+const News = require("../models/News");
 const {Sequelize} = require("sequelize");
 
 const getAll = async () => {

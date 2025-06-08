@@ -1,5 +1,5 @@
-const Meter = require("../models/meter");
-const Apartment = require("../models/apartment");
+const Meter = require("../models/Meter");
+const Apartment = require("../models/Apartment");
 
 
 const getAll = async () => {

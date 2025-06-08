@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
-const User = require("../models/user");
+const User = require("../models/User");
 const OSBB = require("../models/Osbb");
-const {House, Apartment, B, Balance, Expense, Meter, PaymentHistory, RepairApplication, Resident, Notification} = require("../models/associations");
+const {House, Apartment} = require("../models/associations");
 const {Sequelize} = require("sequelize");
 
 const saltRounds = 10;
@@ -18,23 +18,9 @@ const get = async (id) => {
 
 const getAccountantsWithHierarchy = async () => {
 
- /*   console.log(Resident.associations);
-    console.log(RepairApplication.associations);
-    console.log(PaymentHistory.associations);
-    console.log(Notification.associations);
-    console.log(Meter.associations);
-    console.log(Expense.associations);
-    console.log(Balance.associations);
-    console.log(Apartment.associations);
-    console.log(User.associations);
-    console.log(OSBB.associations);
-    console.log(House.associations);
-    console.log(Apartment.associations);*/
-
-
-    const accountants = await User.findAll({
-        where: { role: 'Accountant' },
-        attributes: ['id', 'login','email'],
+    return await User.findAll({
+        where: {role: 'Accountant'},
+        attributes: ['id', 'login', 'email'],
         include: [
             {
                 model: OSBB,
@@ -69,7 +55,6 @@ const getAccountantsWithHierarchy = async () => {
             }
         ]
     });
-    return accountants;
 };
 
 
@@ -84,7 +69,7 @@ const add = async (userData) => {
 
     const hashedPassword = await bcrypt.hash(password, saltRounds);
 
-    const newUser = await User.create({
+    return await User.create({
         login,
         password: hashedPassword,
         role,
@@ -94,7 +79,6 @@ const add = async (userData) => {
         osbbName: osbbName,
         individualHooks: true
     });
-    return newUser;
 };
 
 const update = async (id, userData) => {
