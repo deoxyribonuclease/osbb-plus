@@ -21,7 +21,7 @@ require('./models/PaymentHistory');
 require('./models/Balance');
 require('./models/UserNotification');
 require('./models/Expense');
-require('./models/OSBB');
+require('./models/Osbb');
 
 require('./models/associations');
 
