@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="" />
+    <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +50,7 @@
     "Node.js.server.js.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "20.12.2",
     "javascript.nodejs.core.library.typings.version": "20.12.14",
     "kotlin-language-version-configured": "true",
@@ -127,7 +130,7 @@
       <workItem from="1745992240184" duration="20000" />
       <workItem from="1747129782221" duration="6726000" />
       <workItem from="1747200988997" duration="3321000" />
-      <workItem from="1749422650748" duration="549000" />
+      <workItem from="1749422650748" duration="1468000" />
     </task>
     <servers />
   </component>
