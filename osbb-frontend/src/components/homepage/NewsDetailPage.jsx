@@ -2,6 +2,7 @@ import ReactHtmlParser from "react-html-parser";
 import { useEffect, useState } from "react";
 import { getNewsById, getNewsNeighborsById } from "../../api/newsApi.jsx";
 import Loader from "../layout/Loader.jsx";
+import {Link, useParams} from "react-router-dom";
 
 const NewsDetailPage = () => {
     const { id } = useParams();
