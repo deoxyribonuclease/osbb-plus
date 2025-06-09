@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="Server fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/api/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/api/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/HousesSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/HousesSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/NewsDetailPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/NewsDetailPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/NewsListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/NewsListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/news.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +134,7 @@
       <workItem from="1745992240184" duration="20000" />
       <workItem from="1747129782221" duration="6726000" />
       <workItem from="1747200988997" duration="3321000" />
-      <workItem from="1749422650748" duration="2938000" />
+      <workItem from="1749422650748" duration="3853000" />
     </task>
     <task id="LOCAL-00001" summary="Exception remove">
       <option name="closed" value="true" />
@@ -156,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749425092486</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Server fix">
+      <option name="closed" value="true" />
+      <created>1749425612604</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749425612604</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

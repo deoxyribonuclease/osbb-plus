@@ -95,7 +95,6 @@
         color: #333;
     }
 
-    /* Keep all existing CSS */
     .return-button {
         background: none;
         border: none;
@@ -236,7 +235,6 @@
         font-weight: bold;
     }
 
-    /* Updated navigation styles with background images */
     .news-navigation {
         display: flex;
         justify-content: space-between;

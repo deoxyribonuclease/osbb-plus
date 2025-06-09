@@ -1,6 +1,5 @@
 import ReactHtmlParser from "react-html-parser";
 import { useEffect, useState } from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
 import { getNewsById, getNewsNeighborsById } from "../../api/newsApi.jsx";
 import Loader from "../layout/Loader.jsx";
 
@@ -10,10 +9,10 @@ const NewsDetailPage = () => {
     const [neighbors, setNeighbors] = useState({ prev: null, next: null });
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchNewsDetail = async () => {
+            window.scrollTo(0, 0);
             try {
                 const newsData = await getNewsById(id);
                 setNews(newsData);
@@ -35,7 +34,20 @@ const NewsDetailPage = () => {
         fetchNewsDetail();
     }, [id]);
 
-    if (loading) return <Loader></Loader>;
+    if (loading) {
+        return (
+            <div
+                style={{
+                    display: "flex",
+                    minHeight: "60vh",
+                    width: "100%"
+                }}
+            >
+                <Loader />
+            </div>
+        );
+    }
+
     if (error) return <div className="error-message">{error}</div>;
     if (!news) return <div className="not-found">News article not found</div>;
 
@@ -49,7 +61,7 @@ const NewsDetailPage = () => {
     };
 
     return (
-        <div className="single-news">
+        <div className="single-news"  style={{minHeight:'100hv'}}>
             {news.image && (
                 <div className="article-image-wrapper">
                     <img

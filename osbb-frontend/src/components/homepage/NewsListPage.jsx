@@ -9,6 +9,7 @@ const NewsListPage = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const fetchAllNews = async () => {
             try {
                 const news = await getAllNews();
@@ -26,7 +27,19 @@ const NewsListPage = () => {
     }, []);
 
 
-    if (loading) return <Loader></Loader>;
+    if (loading) {
+        return (
+            <div
+                style={{
+                    display: "flex",
+                    minHeight: "60vh",
+                    width: "100%"
+                }}
+            >
+                <Loader />
+            </div>
+        );
+    }
     if (error) return <div className="error-message">{error}</div>;
 
     return (
