@@ -272,7 +272,6 @@ const MeterSection = () => {
         return value;
     };
 
-    // Мемоізовані колонки для таблиць
     const meterColumns = useMemo(() => [
         {
             key: "meterType",

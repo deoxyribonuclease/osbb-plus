@@ -32,7 +32,6 @@
     margin-top: auto;
 }
 
-/* Стилі для панелі користувачів */
 .message-component .users-panel {
     flex: 1;
     display: flex;
@@ -78,7 +77,6 @@
     border-radius: 0;
 }
 
-/* Стилі для компонента Collapse (ієрархія) */
 .message-component .hierarchy-collapse {
     border: 1px solid #ddd;
     background-color: #fff;
@@ -127,22 +125,24 @@
     border-radius: 0;
 }
 
-.message-component .loading-indicator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    color: #254623;
-    font-size: 18px;
-}
-
-/* Стилі для форми повідомлення */
 .message-component .form-panel {
     flex: 1;
     display: flex;
     flex-direction: column;
     border: 1px solid #254623;
     background-color: #fff;
+    min-height: 0;
+    max-width: 100%;
+}
+
+.message-component form {
+    padding: clamp(10px, 2.5vw, 20px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 2vw, 15px);
+    height: 100%;
+    min-height: 0;
+    overflow: auto;
 }
 
 .message-component form {
@@ -216,7 +216,6 @@
     cursor: not-allowed;
 }
 
-/* Стилі для сповіщень */
 .message-component .notification {
     margin-top: 15px;
     padding: 10px 15px;

@@ -49,6 +49,7 @@
         button{
             margin: 3px;
             border: 1px solid #324f61;
+            color: black;
         }
 
         button:hover{

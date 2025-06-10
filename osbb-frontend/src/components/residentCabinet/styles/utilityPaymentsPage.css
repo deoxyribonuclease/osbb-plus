@@ -193,5 +193,197 @@
     }
 
 
+
+    @media (max-width: 1024px) {
+        .balance-section {
+            margin: 20px 20px 5px;
+            max-width: none;
+            min-width: auto;
+        }
+
+        .meters-grid {
+            margin: 20px 20px 20px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .payment-container {
+            flex-direction: column;
+            max-height: none;
+            gap: 15px;
+        }
+
+        .card-preview {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+
+        .payment-form {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 8px;
+
+        .utility-title {
+            padding: 8px 15px;
+            font-size: 18px;
+        }
+
+        .balance-section {
+            margin: 15px 10px 5px;
+            padding: 12px;
+            min-width: auto;
+        }
+
+        .balance-item {
+            flex: 1 1 100%;
+            min-width: auto;
+        }
+
+        .meters-grid {
+            margin: 15px 10px 20px;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .meter-block {
+            padding: 12px;
+        }
+
+        .meter-block h3 {
+            font-size: 16px;
+        }
+
+        .form-bottom {
+            padding: 20px 15px;
+        }
+
+        .payment-sector {
+            padding: 12px;
+            gap: 15px;
+        }
+
+        .payment-row {
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+
+    @media (max-width: 480px) {
+        padding: 5px;
+        max-width: calc(100% - 10px);
+
+        .utility-title {
+            padding: 6px 10px;
+            font-size: 16px;
+        }
+
+        .utility-wrapper {
+            min-height: auto;
+        }
+
+        .balance-section {
+            margin: 10px 5px 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .balance-grid {
+            max-height: none;
+        }
+
+        .balance-item {
+            padding: 8px;
+            gap: 5px;
+            font-size: 14px;
+        }
+
+        .meters-grid {
+            margin: 10px 5px 15px;
+            gap: 10px;
+        }
+
+        .meter-block {
+            padding: 10px;
+        }
+
+        .meter-block h3 {
+            font-size: 14px;
+            gap: 5px;
+        }
+
+        .meter-block input {
+            width: 90%;
+            padding: 6px;
+            font-size: 14px;
+        }
+
+        .meter-block button {
+            width: 95%;
+            padding: 6px 10px;
+            font-size: 14px;
+        }
+
+        .form-bottom {
+            padding: 15px 10px;
+        }
+
+        .payment-sector {
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .card-preview {
+            margin-top: 10px;
+        }
+
+        input, select {
+            padding: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        h2, h3, h4 {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .balance-item {
+            font-size: 12px;
+            padding: 6px;
+        }
+
+        .meter-block h3 {
+            font-size: 13px;
+        }
+
+        .meter-block input {
+            width: 95%;
+            padding: 4px;
+            font-size: 13px;
+        }
+
+        .meter-block button {
+            padding: 5px 8px;
+            font-size: 13px;
+        }
+
+        input, select {
+            padding: 4px;
+            font-size: 13px;
+        }
+
+        .utility-title {
+            font-size: 14px;
+        }
+    }
 }
+
 

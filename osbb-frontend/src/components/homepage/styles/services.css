@@ -72,14 +72,13 @@
 
 
 
-/* Адаптивність */
 @media (max-width: 1024px) {
     .services {
-        padding: 0 5%;
+        padding: 5% 5%;
     }
 
     .service-item {
-        width: 45%;
+        width: 85%;
     }
 }
 

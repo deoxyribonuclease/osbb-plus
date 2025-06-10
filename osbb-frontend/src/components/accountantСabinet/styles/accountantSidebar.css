@@ -1,11 +1,11 @@
 .container-sidebar {
     display: flex;
 
-
     .sidebar {
         width: 250px;
         min-width: 250px;
         min-height: 600px;
+        max-height: 100vh;
         color: white;
         padding: 20px;
         display: flex;
@@ -14,18 +14,45 @@
         url('../../../assets/panback.png');
         background-blend-mode: overlay;
         flex-shrink: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        /* Кастомний скролбар */
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        /* Для Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
 
         h1 {
             margin: 0;
             background-color: #324f61;
             padding: 10px;
             text-align: center;
+            flex-shrink: 0;
         }
 
         h2 {
             border-bottom: 3px solid #324f61;
             padding-bottom: 10px;
             text-align: center;
+            flex-shrink: 0;
         }
 
         .menu {
@@ -51,6 +78,8 @@
                 color: #d0d0d0;
                 width: 100%;
                 padding: 6px;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
             }
 
             li.active {
@@ -66,12 +95,11 @@
             }
         }
 
-
         .icon {
             font-size: 18px;
             margin-right: 5px;
+            flex-shrink: 0;
         }
-
 
         .sub-li {
             .submenu {
@@ -80,7 +108,6 @@
                     padding-right: 15px;
                     position: relative;
                     background-color: rgba(142, 143, 148, 0.3)
-
                 }
 
                 li.active {
@@ -89,7 +116,6 @@
                     a {
                         color: #d3c794;
                     }
-
                 }
 
                 li:hover, a:hover {
@@ -114,7 +140,6 @@
             height: 100%;
             background-color: rgba(255, 255, 255, 0.3);
         }
-
 
         .submenu li {
             padding-left: 35px;
@@ -148,15 +173,15 @@
             flex-direction: column;
         }
 
-
         .submenu li a {
             display: flex;
             align-items: center;
             color: #d0d0d0;
             text-decoration: none;
             padding: 5px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
-
 
         .dropdown-btn {
             display: flex;
@@ -167,23 +192,24 @@
             color: #d0d0d0;
             padding: 6px;
             cursor: pointer;
-
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            text-align: left;
         }
 
         .dropdown-btn:hover {
             color: #d3c794;
-
         }
 
         .dropdown-btn:focus {
             outline: none;
         }
 
-
         .chevron {
             margin-top: 5px;
             margin-left: 10px;
             transition: transform 0.3s ease;
+            flex-shrink: 0;
         }
 
         .chevron.rotate {
@@ -194,12 +220,107 @@
             bottom: 10px;
             font-size: 12px;
             color: #aaa;
+            flex-shrink: 0;
+            margin-top: auto;
         }
+
 
     }
 
     .sidebar-content {
         flex-grow: 1;
     }
+}
 
+/* Адаптивність для маленьких екранів */
+@media (max-width: 768px) {
+    .container-sidebar {
+        .sidebar {
+            width: 200px;
+            min-width: 200px;
+            padding: 15px;
+
+            h1 {
+                padding: 8px;
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 14px;
+            }
+
+            .menu li {
+                padding: 3px;
+
+                a {
+                    padding: 4px;
+                    font-size: 14px;
+                }
+            }
+
+            .icon {
+                font-size: 16px;
+            }
+
+            .submenu li {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            .submenu li::before {
+                left: -18px;
+                width: 18px;
+            }
+
+            .submenu li:last-child::after {
+                left: -20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container-sidebar {
+        .sidebar {
+            width: 180px;
+            min-width: 180px;
+            padding: 10px;
+
+            h1 {
+                padding: 6px;
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 12px;
+            }
+
+            .menu li a {
+                font-size: 12px;
+            }
+
+            .icon {
+                font-size: 14px;
+                margin-right: 3px;
+            }
+
+            .submenu li {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .submenu li::before {
+                left: -15px;
+                width: 15px;
+            }
+
+            .submenu li:last-child::after {
+                left: -17px;
+            }
+
+            .chevron {
+                margin-left: 5px;
+            }
+        }
+    }
 }

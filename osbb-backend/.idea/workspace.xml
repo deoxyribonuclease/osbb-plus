@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="Server fix" />
+    <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="Server fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/api/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/api/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/MeterSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/MeterSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/styles/accountantSidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/styles/accountantSidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/styles/meterSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/styles/meterSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/loginform.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/loginform.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/registrationform.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/registrationform.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/homepage/styles/services.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/layout/styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/layout/styles/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/moderatorCabinet/styles/messageComponentStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/moderatorCabinet/styles/messageComponentStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/moderatorCabinet/styles/moderatorSidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/moderatorCabinet/styles/moderatorSidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/moderatorCabinet/styles/newsManagment.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/moderatorCabinet/styles/newsManagment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/residentCabinet/styles/residentSidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/residentCabinet/styles/residentSidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/residentCabinet/styles/utilityPaymentsPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/residentCabinet/styles/utilityPaymentsPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/index.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,31 +54,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.Apartment.js.executor": "Run",
-    "Node.js.House.js.executor": "Run",
-    "Node.js.OSBB.js.executor": "Run",
-    "Node.js.User.js.executor": "Run",
-    "Node.js.UserNotification.js.executor": "Run",
-    "Node.js.db.js.executor": "Run",
-    "Node.js.server.js.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "20.12.2",
-    "javascript.nodejs.core.library.typings.version": "20.12.14",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Vlad/Desktop/osbb/osbb-frontend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.Apartment.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.House.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.OSBB.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.User.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.UserNotification.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.db.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.server.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.12.2&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.14&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vlad/Desktop/osbb/osbb-frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Vlad\Desktop\osbb\osbb-backend\data" />
@@ -127,7 +145,10 @@
       <workItem from="1745992240184" duration="20000" />
       <workItem from="1747129782221" duration="6726000" />
       <workItem from="1747200988997" duration="3321000" />
-      <workItem from="1749422650748" duration="3853000" />
+      <workItem from="1749422650748" duration="3954000" />
+      <workItem from="1749447654220" duration="746000" />
+      <workItem from="1749450008086" duration="2000" />
+      <workItem from="1749582686083" duration="660000" />
     </task>
     <task id="LOCAL-00001" summary="Exception remove">
       <option name="closed" value="true" />

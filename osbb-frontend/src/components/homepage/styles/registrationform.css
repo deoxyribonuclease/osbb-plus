@@ -21,6 +21,7 @@
         width: 100%;
         margin: 6px 0;
         border: 1px solid #bbb;
+        background: white;
         border-radius: 1px;
         font-size: 16px;
         box-sizing: border-box;
@@ -73,7 +74,11 @@
         width: 16px;
         height: 16px;
         cursor: pointer;
+        margin-left: 5px;
+        accent-color: #084de1;
     }
+
+
     button {
         background-color: #d9534f;
         color: #fff;
