@@ -33,7 +33,7 @@ const DebtSection = () => {
     const [apartments, setApartments] = useState([]);
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [reminderMessage, setReminderMessage] = useState(
-        "Нагадуємо вам про необхідність сплати комунальних послуг. Сума боргу: "
+        "Нагадуємо вам про необхідність сплати комунальних послуг."
     );
     const [debtModalIsOpen, setDebtModalIsOpen] = useState(false);
     const [selectedApartment, setSelectedApartment] = useState(null);
@@ -215,10 +215,10 @@ const DebtSection = () => {
 
         doc.setFontSize(11);
         doc.text("З питань оплати заборгованості необхідно звернутися до юридичного відділу.", 14, finalY + 8);
-        doc.text("Адреса електронної пошти: example@email.com", 14, finalY + 24);
+        doc.text("Адреса електронної пошти: aaa@a.com", 14, finalY + 24);
 
         doc.setFontSize(12);
-        doc.text("ОСББ 'аааа'", 14, finalY + 30);
+        doc.text("ОСББ 'Cherkasy'", 14, finalY + 30);
 
         doc.save(`заборгованість_${selectedHouseAddress}.pdf`);
     };

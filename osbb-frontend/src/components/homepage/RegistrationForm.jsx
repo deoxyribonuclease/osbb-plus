@@ -12,7 +12,6 @@ const RegistrationForm = () => {
         password: "",
         confirmPassword: "",
         osbbName: "",
-        agreement: false,
         role: "",
     });
 
@@ -38,17 +37,6 @@ const RegistrationForm = () => {
 
         if (formData.password !== formData.confirmPassword) {
             enqueueSnackbar("Паролі не співпадають!", {
-                variant: 'error',
-                autoHideDuration: 2000,
-                anchorOrigin: {
-                    vertical: 'top',
-                    horizontal: 'right',
-                }
-            });
-            return;
-        }
-        if (!formData.agreement) {
-            enqueueSnackbar("Необхідно прийняти умови!", {
                 variant: 'error',
                 autoHideDuration: 2000,
                 anchorOrigin: {
@@ -96,7 +84,6 @@ const RegistrationForm = () => {
                 password: "",
                 confirmPassword: "",
                 osbbName: "",
-                agreement: false,
                 role: "",
             });
             setInfoMessage("");
