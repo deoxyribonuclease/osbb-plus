@@ -37,12 +37,12 @@ const BalanceByApartment = async (req, res) => {
 };
 
 const BalanceSumByApartment = async (req, res) => {
-    const { apartmentId } = req.params;
+    const { apartmentIds } = req.body;
     try {
-        const totalSum = await paymentService.GetBalanceSumByApartment(apartmentId);
-        res.status(200).json({ totalSum });
+        const debts = await paymentService.GetBalanceSumByApartment(apartmentIds);
+        res.status(200).json(debts);
     } catch (error) {
-        res.status(500).json({ error: `Failed to calculate sum for apartment: ${error.message}` });
+        res.status(500).json({ error: `Failed to calculate sum for apartments: ${error.message}` });
     }
 };
 

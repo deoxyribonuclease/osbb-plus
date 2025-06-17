@@ -108,16 +108,26 @@ const DebtSection = () => {
     const fetchApartments = async (houseId) => {
         try {
             const apartmentsData = await getApartmentsByHouse(houseId);
-            const withDebts = [];
-            for (const apt of apartmentsData) {
-                const debt = await getDebt(apt.id);
-                if (debt.totalSum > 0) {
-                    withDebts.push({ ...apt, totalDebt: debt.totalSum });
-                }
+            const apartmentIds = apartmentsData.map(apt => apt.id);
+
+            if (apartmentIds.length > 0) {
+                const debtsData = await getDebt(apartmentIds);
+                const debtsMap = new Map(debtsData.map(debt => [debt.apartmentId, debt.totalSum]));
+
+                const withDebts = apartmentsData
+                    .map(apt => ({
+                        ...apt,
+                        totalDebt: debtsMap.get(apt.id) || 0
+                    }))
+                    .filter(apt => apt.totalDebt > 0);
+
+                setApartments(withDebts);
+            } else {
+                setApartments([]);
             }
-            setApartments(withDebts);
         } catch (error) {
             console.error("Error fetching apartments:", error);
+            setApartments([]);
         }
     };
 

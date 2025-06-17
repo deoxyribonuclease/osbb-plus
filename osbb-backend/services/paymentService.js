@@ -33,15 +33,25 @@ const BalanceAdd = async (paymentData) => {
 
 
 const { Op } = require('sequelize');
+const {fn, col} = require("../db");
 
-const GetBalanceSumByApartment = async (apartmentId) => {
-    const total = await Balance.sum('sum', {
+const GetBalanceSumByApartment = async (apartmentIds) => {
+    const results = await Balance.findAll({
+        attributes: [
+            'apartmentId',
+            [fn('sum', col('sum')), 'totalSum']
+        ],
         where: {
-            apartmentId,
+            apartmentId: { [Op.in]: apartmentIds },
             sum: { [Op.gte]: 0 }
-        }
+        },
+        group: ['apartmentId']
     });
-    return total || 0;
+
+    return results.map(result => ({
+        apartmentId: result.apartmentId,
+        totalSum: result.getDataValue('totalSum') || 0
+    }));
 };
 
 

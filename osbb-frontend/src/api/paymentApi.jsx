@@ -84,10 +84,10 @@ export const deletePayment = async (paymentId) => {
     }
 };
 
-export const getDebt = async (apartmentId) => {
+export const getDebt = async (apartmentIds) => {
     try {
         const authToken = getAuthTokenFromCookies();
-        const response = await axios.get(`${API_BASE_URL}/payment/debt/${apartmentId}`, {
+        const response = await axios.post(`${API_BASE_URL}/payment/debt/`,{apartmentIds}, {
             headers: {
                 Authorization: `Bearer ${authToken}`,
             },

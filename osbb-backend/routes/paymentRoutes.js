@@ -12,7 +12,7 @@ router.patch('/history/:id',verifyToken(['Resident', 'Accountant']), paymentCont
 
 router.get('/:id',verifyToken(['Moderator']), paymentController.BalanceFind);
 router.get('/apartment/:apartmentId',verifyToken(['Resident', 'Accountant']), paymentController. BalanceByApartment);
-router.get('/debt/:apartmentId',verifyToken(['Resident', 'Accountant']), paymentController.BalanceSumByApartment);
+router.post('/debt',verifyToken(['Resident', 'Accountant']), paymentController.BalanceSumByApartment);
 router.post('/',verifyToken(['Resident', 'Accountant']), paymentController.BalanceCreate);
 router.patch('/:id',verifyToken(['Moderator']), paymentController.BalanceUpdate);
 router.delete('/:id',verifyToken(['Moderator']), paymentController.BalanceDelete);
