@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="Server fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/paymentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/paymentController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/paymentRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/paymentRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/paymentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/paymentService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/api/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/api/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/api/paymentApi.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/api/paymentApi.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/DebtSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/components/accountantСabinet/DebtSection.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,7 @@
     "javascript.nodejs.core.library.configured.version": "20.12.2",
     "javascript.nodejs.core.library.typings.version": "20.12.14",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Vlad/Desktop/osbb/osbb-frontend",
+    "last_opened_file_path": "C:/Users/Vlad/Desktop/osbb/osbb-backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -143,7 +138,8 @@
       <workItem from="1749765058156" duration="5000" />
       <workItem from="1750103152866" duration="25000" />
       <workItem from="1750171245577" duration="2775000" />
-      <workItem from="1750183717507" duration="1966000" />
+      <workItem from="1750183717507" duration="2257000" />
+      <workItem from="1750243612194" duration="1924000" />
     </task>
     <task id="LOCAL-00001" summary="Exception remove">
       <option name="closed" value="true" />

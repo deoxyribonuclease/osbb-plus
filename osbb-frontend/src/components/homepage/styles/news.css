@@ -121,7 +121,7 @@
 
     .article-image-wrapper {
         position: relative;
-        width: 110%;
+        width: 100%;
         background: #000000;
         display: flex;
         justify-content: center;
