@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="039c2975-5c62-4950-a5c5-aff7fdf744ba" name="Changes" comment="Server fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../osbb-frontend/src/api/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../osbb-frontend/src/api/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +138,7 @@
       <workItem from="1750103152866" duration="25000" />
       <workItem from="1750171245577" duration="2775000" />
       <workItem from="1750183717507" duration="2257000" />
-      <workItem from="1750243612194" duration="1924000" />
+      <workItem from="1750243612194" duration="2196000" />
     </task>
     <task id="LOCAL-00001" summary="Exception remove">
       <option name="closed" value="true" />
