@@ -67,6 +67,12 @@ const BalanceCreate = async (req, res) => {
 const BalanceUpdate = async (req, res) => {
     const { id } = req.params;
     const { apartmentId, meterType, sum } = req.body;
+    if (typeof sum !== 'number' || isNaN(sum)) {
+        return res.status(400).json({ error: 'Invalid value: sum must be a number' });
+    }
+    if (sum < 0) {
+        return res.status(400).json({ error: 'Invalid value: sum cannot be negative' });
+    }
 
     try {
         const updatedPayment = await paymentService.BalanceUpdate(id, { apartmentId, meterType, sum });
@@ -79,6 +85,7 @@ const BalanceUpdate = async (req, res) => {
         res.status(500).json({ error: `Failed to update payment: ${error.message}` });
     }
 };
+
 
 const BalanceDelete = async (req, res) => {
     const { id } = req.params;
